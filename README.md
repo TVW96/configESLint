@@ -1,4 +1,3 @@
-# configESLint
 # ESLint Configuration in a Node.js Project
 
 ## Assignment Overview
