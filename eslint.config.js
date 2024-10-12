@@ -1,15 +1,22 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import pluginReact from "eslint-plugin-react";
-// import semistandard from "eslint-config-semistandard"; // Import the shareable config
+import semistandard from "eslint-config-semistandard"; // Import the shareable config
 
 
 export default [
-  { files: ["**/*.{js,mjs,cjs,jsx}"] },
-  { languageOptions: { globals: globals.browser } },
+  // use recommended configurations
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
-  semistandard, // add the shareable config
+  semistandard, // add the shareable
+
+  {
+    files: ["**/*.{js,mjs,cjs,jsx}"],
+    languageOptions: {
+      globals: globals.browser
+    },
+  },
+
   {
     rules: {
       "semi": [2, "always"],  // Enforce semicolons
