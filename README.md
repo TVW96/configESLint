@@ -2,8 +2,6 @@
 
 ## Assignment Overview
 
-**Time:** 07:03:56
-
 ### Objective
 The goal of this assignment is to gain hands-on experience in setting up and configuring ESLint within a Node.js project. This ensures code consistency and helps avoid potential bugs in the application.
 
